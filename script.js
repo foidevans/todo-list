@@ -18,7 +18,7 @@ const taskAddition = (e) => {
   textSpan.textContent = taskText;
   const deleteBtn = document.createElement("span");
   deleteBtn.classList.add("delete-btn");
-  deleteBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="trash-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  deleteBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="trash-icon" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <polyline points="3 6 5 6 21 6"></polyline>
       <path d="M19 6L17.5 20H6.5L5 6"></path>
       <path d="M10 11V17"></path>
