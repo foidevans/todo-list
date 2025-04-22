@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: "Caveat", cursive;
+  background-image: url("bgimg4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  padding-inline: 8%;
+}
+
+input {
+  width: 100%;
+}
+
+.btn-container {
+  display: grid;
+  place-content: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.task-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2,
+p {
+  text-align: center;
+  margin-block: 10px;
+  color: whitesmoke;
+}
+
+.task-text, h3 {
+  color: whitesmoke;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.trash-icon {
+  cursor: pointer;
+  color: whitesmoke;
+  transition: color 0.3s ease;
+}
+
+#completed-tasks {
+  display: none;
+}
+
+#completed-tasks.show-tasks {
+  display: block;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.8;
+}
+
+.icon-up {
+  display: none;
+}
+
+.icon-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="text"],
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease-in-out;
+}
+
+input::placeholder {
+  color: #ccc;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.2);
+}
+
+button {
+  background-color: #fff;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #ccc;
+}
+
+button:hover {
+  background-color: #111;
+  color: #fff;
+  border-color: #fff;
+  transform: scale(1.05);
+}
